@@ -1,0 +1,304 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*/         Menu/Navegador       /*/
+
+.logo-menu {
+    background-color: rgb(9, 40, 80);
+    color: white;
+    text-align: center;
+}
+
+.btn_menu {
+    padding: 5%;
+    background-color: rgb(9, 40, 80);
+    color: white;
+}
+.btn_menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    background-color: rgb(9, 40, 80);
+    padding: 5%;
+    text-align: center;
+}
+
+ul.navigation {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul.navigation.show {
+    display: flex;
+}
+
+ul.navigation li {
+    list-style: none;
+    margin: 0px 0px;
+}
+
+ul.navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.navigation li:hover {
+    background-color: rgb(9, 40, 80);
+}
+
+@media screen and (min-width: 600px){
+
+    .btn_menu {
+       display: none;
+    }
+
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.navigation li a {
+    background-color: rgb(20, 79, 156);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 1rem;
+    display: block;
+}
+
+.navigation li a:hover {
+    background-color: rgb(6, 141, 175);
+}
+
+.navigation>li {
+    float: left;
+}
+
+.navigation li ul {
+    display: none;
+    position: absolute;
+
+}
+
+.navigation li:hover>ul {
+    display: block;
+}
+
+.habitantes {
+    background-image: url("../Images/Fondos/lich_king.jpg");
+    background-size: cover;
+    padding: 5%;
+    height: 200%;
+}
+
+body {
+    background-image: url("../Images/Fondos/Blue_Leather.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 372%;
+    color: #fff;
+    -webkit-text-stroke: 3.5px #000;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+h2 {
+    font-size: 400%;
+    line-height: 2;
+    color: rgb(13, 28, 167);
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+    margin-top: 0%;
+}
+
+h3 {
+    font-size: 400%;
+    line-height: 2;
+    color: rgb(122, 21, 21);
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px #000;
+    margin-top: 0%;
+}
+
+h4 {
+    font-size: 350%;
+    color: rgb(6, 141, 175);
+    line-height: 2;
+    -webkit-text-stroke: 3px #000;
+    margin: 0%;
+}
+
+p {
+    font-size: 130%;
+    color: #b1997f;
+    margin: 0%;
+}
+
+.divider {
+    height: 5px;
+    width: 100%;
+    background-color: #000;
+    pointer-events: none;
+    margin-bottom: auto;
+}
+
+.raids {
+    list-style: none;
+    font-size: 250%;
+    color: #fff;
+    line-height: 150%;
+    margin-left: 19%;
+    -webkit-text-stroke: 1.5px #000;
+}
+
+.leather-blue {
+    background-image: url("../Images/Fondos/Blue_Leather.jpg");
+}
+
+
+.leather-red {
+    background-image: url("../Images/Fondos/Red_Leather.jpg");
+}
+
+.end_game {
+    background-image: url("../Images/Fondos/lich_king.jpg");
+    background-size: cover;
+}
+
+.logo {
+    text-align: center;
+}
+/*/ BOTONES /*/
+.btn {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+    cursor: pointer;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bold;
+    outline: none;
+    background-color: #0a035f;
+    color: antiquewhite;
+}
+
+button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+    cursor: pointer;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bold;
+    outline: none;
+    background-color: #0a035f;
+    color: antiquewhite;
+}
+
+/*/ TABLA /*/
+
+table td {
+    border: 3px solid rgb(85, 44, 44);
+    color: #b1997f;
+
+}
+
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    font-size: 175%;
+    background-color: #13069ba1;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    color: rgb(36, 196, 196);
+}
+
+.thStyle {
+    font-size: 150%;
+    color: #b1997f;
+}
+
+.tableJSON {
+    margin: 0 auto;
+    font-size: 125%;
+    border: 1px #000;
+
+}
+
+@media screen and (max-width: 450px){
+    .tableJSON {
+        font-size: 150%;
+    }
+    thead {
+        display: none;
+    }
+    tr td:first-child {
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+    tbody td:before {
+        display: block;
+        text-align:center;
+    }
+    
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 1%;
+}
+
+.copyright {
+    text-align: right;
+    font-size: 100%;
+    color: #b1997f;
+}
+.fImagen {
+    width: auto;
+    height: 50px;
+}
+
+.Incorrecto { 
+    background-color: red;
+}

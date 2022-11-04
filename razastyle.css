@@ -1,0 +1,143 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*/         Menu/Navegador       /*/
+.logo {
+    background-color: rgb(9, 40, 80);
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+
+.btn_menu {
+    padding: 5%;
+    background-color: rgb(9, 40, 80);
+    color: white;
+}
+.btn_menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    background-color: rgb(9, 40, 80);
+    padding: 5%;
+    text-align: center;
+}
+
+ul.navigation {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul.navigation.show {
+    display: flex;
+}
+
+ul.navigation li {
+    list-style: none;
+    margin: 0px 0px;
+}
+
+ul.navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.navigation li:hover {
+    background-color: rgb(9, 40, 80);
+}
+
+@media screen and (min-width: 600px){
+
+    .btn_menu {
+       display: none;
+    }
+
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.navigation li a {
+    background-color: rgb(20, 79, 156);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 1rem;
+    display: block;
+}
+
+.navigation li a:hover {
+    background-color: rgb(6, 141, 175);
+}
+
+.navigation>li {
+    float: left;
+}
+
+.navigation li ul {
+    display: none;
+    position: absolute;
+
+}
+
+.navigation li:hover>ul {
+    display: block;
+}
+.alianza {
+    background-image: url("../Images/Fondos/Blue_Leather.jpg");
+    font-family: Open, Arial, Helvetica, sans-serif;
+}
+
+.horda {
+    background-image: url("../Images/Fondos/Red_Leather.jpg");
+    font-family: Open, Arial, Helvetica, sans-serif;
+}
+
+.habitantes {
+    padding: 6%;
+    height: 100%;
+}
+
+h1, h2 {
+    font-size: 200%;
+    line-height: 1.5;
+    color: #fff;
+    text-shadow: 0 0 1px transparent, 0 1px 2px rgb(0 0 0 / 80%);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table td {
+    border: 3px solid black;
+    text-align: left;
+    color: #b1997f;
+
+}
+
+
+@media screen and (max-width: 450px) {
+    .tabla {
+        overflow: scroll;
+        height: auto;
+        width: auto;
+    }
+
+    .tabla table {
+        width:500px;
+    }
+}
