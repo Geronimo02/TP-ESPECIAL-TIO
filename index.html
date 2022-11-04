@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTG-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>World of Warcraft Wrath of the Lich King</title>
+    <link rel="stylesheet" href="css/lich_king.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo-menu">
+                <img src="./Images/Otros/WrathLogo.png" width="150" height="80" alt="">
+                <div class="btn_menu"><a>MENÚ</a></div>
+            </div>
+            <div>
+                <ul class="navigation">
+                    <li><a href="#alianza">Alianza</a></li>
+                    <li><a href="#horda">Horda</a></li>
+                    <li><a href="#contenido">Contenido end game</a></li>
+                    <li><a href="#">Razas y clases</a>
+                        <ul>
+                            <li><a href="RazasAlianza.html">Razas y clases Alianza</a></li>
+                            <li><a href="RazasHorda.html">Razas y clases Horda</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#tablaid">Comprar personaje</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="habitantes">
+        <h1 id="principal"> Habitantes de Azeroth </h1>
+        <p class="pad-bottom"><strong>Azeroth alberga una gran variedad de razas, tanto nativas como procedentes de
+                otros reinos.
+                Ya seas un incondicional defensor de la Alianza o un feroz guardián de la Horda, la raza de juego
+                determina el bando por el que lucharás en esta interminable guerra. ¿Dónde residen tus
+                lealtades?</strong></p>
+
+        <p><strong><i>“You speak of justice? Of cowardice? I will show you the justice of the grave and the true meaning
+                    of fear.“ — The Lich King Arthas during the Battle of Angrathar.</i></strong></p>
+
+        <p><strong><i>“All life, must end…” -The Lich King, “World of Warcraft”</i></strong></p>
+
+        <p><strong><i>My son. The day you were born the very forests of Lordaeron whispered the name..... Arthas.
+                    -Terenas Menethil II</i></strong></p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- SECCION ALIANZA-->
+    <div class="leather-blue">
+        <h2 id="alianza">por la Alianza</h2>
+        <div class="logo">
+            <img src="./Images/Otros/Alianza/Alliance logo.png" width="150" height="190" alt="">
+        </div>
+        <p>La firme Alianza cree en la tradición. Cuenta con defensores acérrimos de la justicia y el deber que
+            protegen el reino de Azeroth contra cualquier agresor, incluida la salvaje Horda.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- SECCION HORDA -->
+    <div class="leather-red">
+        <h3 id="horda">por la Horda</h3>
+        <div class="logo">
+            <img src="./Images/Otros/Horda/Horda logo.png" width="150" height="190" alt="">
+        </div>
+        <p>La indomable Horda cree en la unidad. Cuenta con fervientes guardianes de la libertad y la esperanza que
+            se oponen firmemente a cualquiera que amenace estos ideales, incluida la estricta Alianza.</p>
+    </div>
+
+    <div class="divider"></div>
+    <div class="end_game">
+        <h4 id="contenido">Contenido de la Expansión</h4>
+        <ul class="raids">
+            <li>Obsidian Sanctum</li>
+            <li>Naxxramas</li>
+            <li>Vault of Archavon</li>
+            <li>The Eye of Eternity</li>
+            <li>Ulduar</li>
+            <li>Trial of the Crusader</li>
+            <li>Onyxia's Lair</li>
+            <li>The Ruby Sanctum</li>
+            <li>Icecrown Citadel</li>
+        </ul>
+        <div class="divider"></div>
+    </div>
+
+    <h4>Ingrese su personaje al listado...</h3>
+
+        <form class="formStyle" id="tablaid">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Nombre de tu personaje...">
+
+            <label for="faccion">Faccion:</label>
+            <select name="faccion">
+                <option>Alianza</option>
+                <option>Horda</option>
+            </select>
+
+            <label for="raza">Raza:</label>
+            <select name="raza">
+                <option>Human</option>
+                <option>Dwarf</option>
+                <option>Gnome</option>
+                <option>Night Elf</option>
+                <option>Draenei</option>
+                <option>Orc</option>
+                <option>Troll</option>
+                <option>Tauren</option>
+                <option>Undead</option>
+                <option>Blood Elf</option>
+            </select>
+
+            <label for="clase">Clase:</label>
+            <select name="clase">
+                <option>Paladin</option>
+                <option>Warrior</option>
+                <option>Hunter</option>
+                <option>Rogue</option>
+                <option>Priest</option>
+                <option>Mage</option>
+                <option>Warlock</option>
+                <option>Shaman</option>
+                <option>Druid</option>
+                <option>Death Knight</option>
+            </select>
+
+            <label for="nivel">Nivel:</label>
+            <select name="nivel">
+                <option>80</option>
+            </select>
+
+            <label for="valor">Valor :</label>
+            <input type="text" name="valor" placeholder="800$">
+
+            <button type="submit" class="btn" id="UsuarioAgrege">Agregar</button>
+
+        </form>
+        <table id="tablaPersonajes" class="tableJSON">
+            <thead class="thStyle">
+                <th>Nombre</th>
+                <th>Faccion</th>
+                <th>Raza</th>
+                <th>Clase</th>
+                <th>Nivel</th>
+                <th>Valor</th>
+            </thead>
+            <tbody id="contenidoTabla"></tbody>
+        </table>
+
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/tabla.js"></script>
+
+        <footer>
+            <div class="container">
+                <a href="https://worldofwarcraft.com/es-es/"><img src="./Images/Otros/logo_wow.png" class="fImagen"
+                        alt="Pagina Oficial WOW"></a>
+                <a href="https://www.facebook.com/Warcraft"><img src="./Images/Otros/Facebook_Logo.png" class="fImagen"
+                        alt="facebook"></a>
+                <a href="https://twitter.com/warcraft"><img src="./Images/Otros/twitter_logo.png" class="fImagen"
+                        alt="Twitter"></a>
+                <a href="https://www.youtube.com/watch?v=yctP7oxJL4E"><img src="./Images/Otros/YouTube.png"
+                        class="fImagen" alt="Youtube"></a>
+            </div>
+            <div class="copyright">Copyright 1995-2023</div>
+        </footer>
+</body>
+
+</html>
